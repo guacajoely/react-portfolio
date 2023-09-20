@@ -1,5 +1,7 @@
 import { useRef } from 'react';
 import './App.css'
+
+import headshot from './assets/headshot.jpg'
 import projectScreenshot1 from './assets/project1.png'
 import projectScreenshot2 from './assets/project2.png'
 import projectScreenshot3 from './assets/project3.png'
@@ -17,6 +19,7 @@ function App() {
   return (
     <>
       <nav className="nav-bar">
+
         <div className="nav-box">
           <a className="nav-link" onClick={scrollToAbout}>About</a>
         </div>
@@ -33,7 +36,7 @@ function App() {
 
       <section className="about" ref={aboutRef}>
         <div className="about-left">
-          <img className="headshot-image" src="https://i.imgur.com/JOylcxZ.jpg" alt="headshot" />
+          <img className="headshot-image" src={headshot} alt="headshot" />
         </div>
         <div className="about-right">
           <h1 className="about-header">Joel Dick</h1>
@@ -101,7 +104,7 @@ function App() {
       <footer className="footer" ref={contactRef}>
 
         <div className="footer-text">
-          Created by <a href="#about">Joel Dick</a>
+          Created by <a href="https://github.com/guacajoely/react-portfolio" target="_blank" rel='noreferrer'>Joel Dick</a>
         </div>
 
       </footer>
